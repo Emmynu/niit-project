@@ -1,0 +1,92 @@
+:root{
+    --fastTrans: all .9s ease;
+    --mediumTrans: all 1s ease;
+    --slowTrans: all 2s ease;
+}
+body{
+    /* margin: 0; */
+    padding: 0;
+    background: aliceblue;
+    margin-bottom: 10000px;
+}
+
+/* nav */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--mediumTrans);
+    /* padding: 2px ; */
+}
+
+.logo{
+    font-size: 29px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.pages-container{
+   display: flex;
+   align-items: center;
+}
+.pages{
+    margin-right: 3px;
+}
+.pages a{
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+   color: gray;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 12px rgba(216, 216, 216, 0.5);
+    padding: 2px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    transition: var(--mediumTrans);
+}
+.bar-container{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    width: 27px;
+    height: 3.5px;
+    border-radius: 500px;
+    background-color: #000;
+    margin-top: 4px;
+}
+/* responsiveness */
+@media (max-width:800px) {
+    .pages-container{
+        display: none;
+    }
+    .bar-container{
+        display: block;
+    }
+}
+
+/* end  of nav */
+.about-label{
+    background-image: url("../images/filename.jpg");
+    padding: 50px;
+    object-position: center;
+    object-fit: cover;
+    background-repeat: repeat;
+    font-size: 23px;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    transition: var(--slowTrans);
+}
+.about-label:hover{
+    text-decoration: underline;
+    transition: var(--mediumTrans);
+}
