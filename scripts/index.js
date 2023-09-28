@@ -6,6 +6,8 @@ window.addEventListener("scroll",function(){
   this.document.querySelector(".navBar").classList.remove("fixed-nav")
 })
 
-document.querySelector(".bar-container").addEventListener("click",function(){
-    console.log("open close");
+document.querySelectorAll(".bar-container").forEach((icon)=>{
+  icon.addEventListener("click",function(){
+      document.querySelector(".sm-pages-container").classList.toggle("show-nav")
+  })
 })
