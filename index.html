@@ -7,76 +7,127 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
+
     <nav class="navBar">
-        <!-- logo-section -->
-        <section class="logo-container">
+        <section>
             <h2 class="logo">LOGO</h2>
         </section>
-
-        <!-- nav-pages -->
+        <!-- pages for large-screen -->
         <section class="pages-container">
-            <article class="pages">
-                <a href="#">Page</a>
-            </article>
-
-            <article class="pages">
-                <a href="#">Page</a>
-            </article>
-
-            <article class="pages">
-                <a href="#">Page</a>
-            </article>
-
-            <article class="pages">
-                <a href="#">Page</a>
-            </article>
+            <ul>
+                <li class="pages">
+                    <a href="">Home</a>
+                </li> 
+                <li class="pages">
+                    <a href="">About</a>
+                </li>
+                 <li class="pages">
+                    <a href="">Courses</a>
+                </li>
+                 <li class="pages">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </section>
+        <!-- third section -->
+        <section class="pages-container">
+            <button>Sign up</button>
+            <button>Search</button>
         </section>
 
-        <!-- nav-Icon -->
+        <!-- nav-icon -->  
         <div class="bar-container">
-            <div class="bar one"></div>
-            <div class="bar two"></div>
-            <div class="bar three"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     </nav>
+    <!--  pages for small screen -->
+    <section class="sm-pages-container">
 
-      <!-- pages for smaller screen -->
-      <section class="sm-pages-container">
         <header class="sm-header">
             <h2 class="logo">LOGO</h2>
 
             <!-- close nav -->
-            <div class="bar-container">
+            <div class="bar-container" style="border: none;">
                 <div class="bar sm-one"></div>
                 <div class="bar sm-three"></div>
             </div>
         </header>
-        <section class="">
-            <article class="sm-pages pages">
-                <a href="#">Page</a>
-            </article>
-
-            <article class="sm-pages pages">
-                <a href="#">Page</a>
-            </article>
-
-            <article class="sm-pages pages">
-                <a href="#">Page</a>
-            </article>
-
-            <article class="sm-pages pages">
-                <a href="#">Page</a>
-            </article>
+        <section style="margin-left: -40px;">
+            <ul>
+                <li class="sm-pages pages">
+                    <a href="#">Home</a>
+                </li>
+    
+                <li class="sm-pages pages">
+                    <a href="#">About</a>
+                </li>
+    
+                <li class="sm-pages pages">
+                    <a href="#">Courses</a>
+                </li>
+    
+                <li class="sm-pages pages">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </section>
-    </section>
-
+    </section> 
     <!-- main about content -->
 
-    <!-- <main class="about-container">
+    <main class="about-container">
         <section class="about-label">
-            About Us
-        </section> -->
-    <!-- </main> -->
+            <article>
+                <h2 class="about-text">About us</h2>
+                <div class="underline"></div>
+            </article>
+        </section>
+        <p class="about-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum laboriosam ipsam nesciunt eius sequi ipsum, eaque incidunt, repellendus iure inventore sunt natus. Velit repudiandae consectetur, blanditiis architecto ducimus tenetur.</p>
+
+        <section style="background-color: white;">
+            <section class="about-tab-section">
+                <div>
+                    <img src="https://images.pexels.com/photos/3825412/pexels-photo-3825412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="about-image">
+                </div>
+                <div class="about-tab-container">
+    
+                    <article class="about-tab-btn-container">
+                        <button class="tab-btn" onclick="toggleTabs(0)">History</button>
+                        <button class="tab-btn" onclick="toggleTabs(1)">Vision</button>
+                        <button class="tab-btn" onclick="toggleTabs(2)">Goals</button>
+                    </article>
+    
+                    <article class="tabs-content">
+                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque error mollitia sequi nobis distinctio. Iure expedita nihil pariatur laudantium tenetur possimus modi molestias voluptas veniam iste totam cupiditate quae, quaerat dignissimos, fugiat architecto aspernatur eaque, illum nemo. Ut, officiis atque?</h2>
+                    </article>
+    
+                    <article class="tabs-content">
+                        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis itaque sed, a cupiditate iure accusamus consequatur voluptas est similique deleniti omnis laboriosam voluptatum totam ullam culpa eligendi rerum natus consequuntur id? Amet libero labore quidem quia cumque expedita, quo quae, deserunt fugiat praesentium veniam a?</h2>
+                    </article>
+    
+                    <article class="tabs-content">
+                        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis itaque sed, a cupiditate iure accusamus consequatur voluptas est similique deleniti omnis laboriosam voluptatum totam ullam culpa eligendi rerum natus consequuntur id? Amet libero labore quidem quia cumque expedita, quo quae, deserunt fugiat praesentium veniam a?</h2>
+                    </article>
+                </div>
+            </section>
+    
+            <section class="about-gallery-container">
+                <h2 class="about-gallery-label">Our Gallery</h2>
+                <div style="display: flex;justify-content: center;">
+                    <article class="slider-container">
+                        <img src="https://images.pexels.com/photos/3825412/pexels-photo-3825412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="100%" class="slide-image">
+                        <img src="https://images.pexels.com/photos/3825412/pexels-photo-3825412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="100%" class="slide-image">
+                        <img src="https://images.pexels.com/photos/3825412/pexels-photo-3825412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="100%" class="slide-image">
+                        <img src="https://images.pexels.com/photos/3825412/pexels-photo-3825412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="100%" class="slide-image">
+                    </article>
+                </div>
+                <button onclick="IncreaseSlider()">next</button>
+                <button onclick="DecreaseSlider()">prev</button>
+
+            </section>
+        </section>
+    </main>
 </body>
 <script src="./scripts/index.js"></script>
 </html>
