@@ -230,15 +230,28 @@ a:hover{
 .slide-image{
     position: absolute;
 }
-.slider-btn button{
+.slider-btn button,.play-icon{
     position: absolute;
     top: 50%;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+.play-icon{
+    z-index: 20;
+    transform: translate(50%,50%);
 }
 .slider-btn .prev{
     left: 0;  
 }
 .slider-btn .next{
     right: 0;  
+}
+.slider-radio-container{
+    display: flex;
+    place-content: center;
+    margin-top: -17px;
+    cursor: pointer;
 }
 
 

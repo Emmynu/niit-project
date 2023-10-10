@@ -18,7 +18,7 @@ document.querySelectorAll(".bar-container").forEach((icon)=>{
 function toggleTabs(i){
   const tabs = document.querySelectorAll(".tabs-content")
   const tabButton = document.querySelectorAll(".tab-btn")
-
+  const images = document.querySelectorAll(".about-image")
   tabs.forEach(tab=>{
     tab.style.display = "none"
   })
@@ -29,7 +29,10 @@ function toggleTabs(i){
   })
   tabButton[i].style.color = "brown"
 
-
+  images.forEach(image=>{
+    image.style.display="none"
+  })
+  images[i].style.display ="block"
 }
 toggleTabs(0)
 
@@ -49,18 +52,25 @@ function sliderFn(i){
 function IncreaseSlider() {
   let newCount = counter >= sliderImage.length ? counter = 0 : counter++
   sliderFn(newCount)
-  console.log(newCount);
 
 }
 
-function DecreaseSlider() {
-  let newCount = counter <=0 ? counter = sliderImage.length - 1 : counter--
-  sliderFn(newCount)
-  console.log(newCount);
-}
+// function DecreaseSlider() {
+//   let newCount = counter <=0 ? counter = sliderImage.length  : counter--
+//   sliderFn(newCount)
+//   console.log(newCount);
+// }
+
+document.querySelectorAll(".slider-radio").forEach(radio=>{
+  radio.addEventListener("click",()=>{
+    const count = radio.dataset.index
+    sliderFn(count)
+  })
+})
+
+
 
 const questions = document.querySelectorAll(".about-faqs ")
-
 questions.forEach(question=>{
   question.querySelector(".faqs").addEventListener("click",function(){
     document.querySelectorAll(".answer").forEach(ans=>{
