@@ -49,9 +49,31 @@ function sliderFn(i){
 function IncreaseSlider() {
   let newCount = counter >= sliderImage.length ? counter = 0 : counter++
   sliderFn(newCount)
+  console.log(newCount);
+
 }
 
 function DecreaseSlider() {
-  let newCount = counter <=0 ? counter = sliderImage.length-1 : counter--
+  let newCount = counter <=0 ? counter = sliderImage.length - 1 : counter--
   sliderFn(newCount)
+  console.log(newCount);
 }
+
+const questions = document.querySelectorAll(".about-faqs ")
+
+questions.forEach(question=>{
+  question.querySelector(".faqs").addEventListener("click",function(){
+    document.querySelectorAll(".answer").forEach(ans=>{
+      if (ans !== question.querySelector(".answer")) {
+        ans.classList.remove("show-answers")
+      }
+      else{
+        question.querySelector(".answer").classList.toggle("show-answers")
+      }
+    })
+  })
+})
+
+window.addEventListener("DOMContentLoaded",()=>{
+  document.querySelector(".date").innerHTML  = new Date().getFullYear()
+})
