@@ -71,7 +71,9 @@ function playVideo() {
     if (imageIndex===counter) {
       videoContainer.classList.add("show-answers")
      closeBtn.classList.add("show-answers")
-      videoContainer.innerHTML = `<video controls width="100%" height="100%"><source src=${i.dataset.src}></source></video>`
+      videoContainer.innerHTML = `<video controls width="100%" height="100%">
+      <source src=${i.dataset.src}></source></video>`
+      // videoContainer.requestFullscreen()
     }
   })
 }
