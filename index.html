@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
     <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -75,6 +74,11 @@
                 </li>
             </ul>
         </section>
+        <hr>
+        <section>
+            <a href="#" class="auth-btn">Login</a>
+            <button class="search-btn">Search</button>
+        </section>
     </section> 
     <!-- main about content -->
 
@@ -85,7 +89,7 @@
                 <div class="underline"></div>
             </article>
         </section>
-        <p class="about-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum laboriosam ipsam nesciunt eius sequi ipsum, eaque incidunt, repellendus iure inventore sunt natus. Velit repudiandae consectetur, blanditiis architecto ducimus tenetur.</p>
+        <p class="about-review">Welcome to LOGO, a place of endless possibilities. We are dedicated to providing a nuturing educational environment, where students flourish academically,emotionally and socially. Discover our commitment to excellence!</p>
 
         <section style="background-color: white; padding-bottom: 20px;">
             <section class="about-tab-section">
@@ -100,44 +104,45 @@
                 <div class="about-tab-container">
     
                     <article class="about-tab-btn-container">
-                        <button class="tab-btn" onclick="toggleTabs(0)">History</button>
+                        <button class="tab-btn" onclick="toggleTabs(0)">Mission</button>
                         <button class="tab-btn" onclick="toggleTabs(1)">Vision</button>
                         <button class="tab-btn" onclick="toggleTabs(2)">Goals</button>
                     </article>
     
                     <article class="tabs-content">
-                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque error mollitia sequi nobis distinctio. Iure expedita nihil pariatur laudantium tenetur possimus modi molestias voluptas veniam iste totam cupiditate quae, quaerat dignissimos, fugiat architecto aspernatur eaque, illum nemo. Ut, officiis atque?</h2>
+                        <h2>The mission of our school is to inspire lifelong learning, foster creativity and cultivate responsible, compassionate individuals. We are dedicated to providing a nuturing and inclusive environment that empowers students to excel acdemically, socially and ethically.</h2>
                     </article>
     
                     <article class="tabs-content">
-                        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis itaque sed, a cupiditate iure accusamus consequatur voluptas est similique deleniti omnis laboriosam voluptatum totam ullam culpa eligendi rerum natus consequuntur id? Amet libero labore quidem quia cumque expedita, quo quae, deserunt fugiat praesentium veniam a?</h2>
+                        <h2>Our school envisions a future where every student thrives, driven by a passion for knowledge and a commitment to positive change. We aspire to be a beacon of educational excellence, shaping tomorrow's leaders and fostering a better world.</h2>
                     </article>
     
                     <article class="tabs-content">
-                        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis itaque sed, a cupiditate iure accusamus consequatur voluptas est similique deleniti omnis laboriosam voluptatum totam ullam culpa eligendi rerum natus consequuntur id? Amet libero labore quidem quia cumque expedita, quo quae, deserunt fugiat praesentium veniam a?</h2>
+                        <h2>Our school's goals are to foster academic excellence, nuture personal growth, and promote a sense of community. We aim to empower students to reach their full potential, instill critical thinking and cultivate values of respect,empathy and responsibility.
+                        </h2>
                     </article>
                 </div>
             </section>
     
             <section class="about-gallery-container">
                 <h2 class="about-gallery-label">Our Gallery</h2>
-                <div style="display: flex;justify-content: center;">
+                <div style="display: flex;justify-content: center; position: relative;">
                     <article class="slider-container">
-                            <div>
-                                <img src="https://images.pexels.com/photos/8941620/pexels-photo-8941620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="100%" class="slide-image">
-                               <!-- <img src="./images/play.png" alt=""class="play-icon"> -->
-                            </div>
+                        <div>
+                            <img src="https://images.pexels.com/photos/8941620/pexels-photo-8941620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slide-image" height="100%" width="100%" data-src="./images/football.mp4" data-index="0"/>
+                        </div>
 
-                            <div>
-                                <img src="https://images.pexels.com/photos/8382309/pexels-photo-8382309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="100%" class="slide-image">
-                               <!-- <img src="./images/play.png" alt=""class="play-icon" style="margin-left: 100px;"> -->
-                            </div>
-                            <div>
-                                <img src=https://images.pexels.com/photos/8471799/pexels-photo-8471799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="100%" class="slide-image">
-                            </div>
-                            <div>
-                                <img src="https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="100%" class="slide-image">
-                            </div>
+                        <div>
+                            <img src="https://images.pexels.com/photos/8382309/pexels-photo-8382309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slide-image" height="100%" width="100%" data-src="./images/art.mp4" data-index="1"/>
+                        </div>
+
+                        <div>
+                            <img src="https://images.pexels.com/photos/8471799/pexels-photo-8471799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slide-image" height="100%" width="100%" data-src="./images/chemistry.mp4" data-index="2"/>
+                        </div>
+
+                        <div>
+                            <img src="https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="slide-image" height="100%" width="100%" data-src="./images/football2.mp4" data-index="3"/>
+                        </div>
 
                         <div class="slider-btn">
                             <button onclick="IncreaseSlider()" class="next">
@@ -145,50 +150,51 @@
                             </button>
                             <button onclick="IncreaseSlider()" class="prev">
                                 <img src="./images/arrow.png" alt="arrow-icon">
-                            </button>
-                           </div>
+                            </button>    
+                             <img src="./images/play.png" alt=""class="play-icon" onclick="playVideo()">
+                        </div>
+                        <section class="video-container">
+                           
+                        </section>
+                        <button class="close-video">close</button>
                     </article>
-                </div>
-                <div class="slider-radio-container">
-                    <input type="radio" name="slider-radio" class="slider-radio" data-index="0">
-                    <input type="radio" name="slider-radio" class="slider-radio" data-index="1">
-                    <input type="radio" name="slider-radio" class="slider-radio" data-index="2">
-                    <input type="radio" name="slider-radio" class="slider-radio" data-index="3">
+
+                   
                 </div>
             </section>
             <section>
                 <h2 class="about-faqs-label">Frequently Asked Questions</h2>
                 <div style="display: flex; place-content: center;">
                     <article class="about-faqs-container">
-                        <section class="about-faqs" data-aos="fade-left" data-aos-duration="1000">
-                            <h2 class="faqs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati exercitationem reprehenderit laudantium reiciendis nihil facere!</h2>
+                        <section class="about-faqs">
+                            <h2 class="faqs">What is the school's admission process?</h2>
         
-                            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro illum voluptatibus vel at, cumque, hic similique mollitia nobis eius perferendis recusandae earum dicta amet molestias.</p>
+                            <p class="answer">Our admission process involves completing an application, an interview, and a review of academic records. We priortize a hoslistic assessment to ensure the best fit for our students.</p>
                         </section>
         
-                        <section class="about-faqs" data-aos="fade-left" data-aos-duration="1800">
-                            <h2 class="faqs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati exercitationem reprehenderit laudantium reiciendis nihil facere!</h2>
+                        <section class="about-faqs">
+                            <h2 class="faqs">Are there extracurricular activities?</h2>
                             
-                            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro illum voluptatibus vel at, cumque, hic similique mollitia nobis eius perferendis recusandae earum dicta amet molestias.</p>
+                            <p class="answer">Yes, we offer a wide range of extracurricular activities, from sports and arts to clubs and community service, allowing students to explore their interests and develop well rounded skills.</p>
                         </section>
         
-                        <section class="about-faqs" data-aos="fade-left" data-aos-duration="2100">
-                            <h2 class="faqs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati exercitationem reprehenderit laudantium reiciendis nihil facere!</h2>
+                        <section class="about-faqs">
+                            <h2 class="faqs">How do you maintain a safe and supportive environment?</h2>
                             
-                            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro illum voluptatibus vel at, cumque, hic similique mollitia nobis eius perferendis recusandae earum dicta amet molestias.</p>
+                            <p class="answer">We maintain a safe and supportive environment through security measures, anti-bullying policies and a dedicated counselling team.  We priortize the emotional and physical well-being of our students.</p>
                         </section>
         
         
-                        <section class="about-faqs" data-aos="fade-left" data-aos-duration="2400">
-                            <h2 class="faqs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati exercitationem reprehenderit laudantium reiciendis nihil facere!</h2>
+                        <section class="about-faqs">
+                            <h2 class="faqs">What is the school approach to technolgy?</h2>
                             
-                            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro illum voluptatibus vel at, cumque, hic similique mollitia nobis eius perferendis recusandae earum dicta amet molestias.</p>
+                            <p class="answer">We embrace technolgy as a valuable educational tool. Our classrooms are equipped with modern technolgy and we provide digital literacy programs to prepare students for digital age.</p>
                         </section>
         
-                        <section class="about-faqs" data-aos="fade-left" data-aos-duration="2500">
-                            <h2 class="faqs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati exercitationem reprehenderit laudantium reiciendis nihil facere!</h2>
+                        <section class="about-faqs">
+                            <h2 class="faqs">How does the school engage with parents and community?</h2>
                             
-                            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro illum voluptatibus vel at, cumque, hic similique mollitia nobis eius perferendis recusandae earum dicta amet molestias.</p>
+                            <p class="answer">We actively involve parents through regular meetings, events and voluteer opportunities. We also foster community connections by hosting open houses,cultural events and patnerships with local organizations.</p>
                         </section>
                     </article>
                 </div>
@@ -196,15 +202,12 @@
         </section>
 
        
-
+      
          <footer>
             <span class="date"></span> LOGO &copy; All Rights Reserved
          </footer>
     </main>
 </body>
 <script src="./scripts/index.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
 </html>
+

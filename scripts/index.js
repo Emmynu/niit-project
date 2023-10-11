@@ -37,37 +37,49 @@ function toggleTabs(i){
 toggleTabs(0)
 
 
-let counter = 0
-const sliderImage = document.querySelectorAll(".slide-image")
+
+
+const slideImage = document.querySelectorAll(".slide-image")
+
 function sliderFn(i){
-  sliderImage.forEach(image=>{
+  slideImage.forEach(image=>{
     image.style.left = "-200%";
    document.documentElement.style.overflowX = "hidden"
   })
 
-  sliderImage[i].style.left = `0%`
-  sliderImage[i].style.transition = "all 2s linear"
+  slideImage[i].style.left = `0%`
+  slideImage[i].style.transition = "all 2s linear"
 }
 
+
+let counter = 0
 function IncreaseSlider() {
-  let newCount = counter >= sliderImage.length ? counter = 0 : counter++
-  sliderFn(newCount)
+  counter++
+  if (counter > slideImage.length - 1) {
+    counter = 0
+  }
+  sliderFn(counter)
 
 }
 
-// function DecreaseSlider() {
-//   let newCount = counter <=0 ? counter = sliderImage.length  : counter--
-//   sliderFn(newCount)
-//   console.log(newCount);
-// }
 
-document.querySelectorAll(".slider-radio").forEach(radio=>{
-  radio.addEventListener("click",()=>{
-    const count = radio.dataset.index
-    sliderFn(count)
+const videoContainer =  document.querySelector(".video-container")
+const closeBtn =  document.querySelector(".close-video")
+function playVideo() {
+  slideImage.forEach(i=>{
+    const imageIndex = parseInt(i.dataset.index)
+    if (imageIndex===counter) {
+      videoContainer.classList.add("show-answers")
+     closeBtn.classList.add("show-answers")
+      videoContainer.innerHTML = `<video controls width="100%" height="100%"><source src=${i.dataset.src}></source></video>`
+    }
   })
-})
+}
 
+closeBtn.addEventListener("click",()=>{
+  videoContainer.classList.remove("show-answers")
+  closeBtn.classList.remove("show-answers")
+})
 
 
 const questions = document.querySelectorAll(".about-faqs ")
@@ -87,3 +99,4 @@ questions.forEach(question=>{
 window.addEventListener("DOMContentLoaded",()=>{
   document.querySelector(".date").innerHTML  = new Date().getFullYear()
 })
+
