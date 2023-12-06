@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+    
+    <input type="text" name="text" class="text" placeholder="Search for products"/>
+    <div class="total">$0</div>
+    <div class="price">Search Price: $0</div>
+    <div class="list"></div>
+
+    <form  class="form">
+        <input type="text" name="name" id="name">
+        <input type="email" name="email" id="email">
+        <input type="password" name="password" id="password">
+        <button>Submit</button>
+    </form>
+
+    <div>
+        <h2 class="class">textsucks</h2>
+        <h2 class="class">textsucks</h2>
+        <h2 class="class">textsucks</h2>
+    </div>
+    <!-- <div>/</div> -->
+    <script>
+        const list = [
+            {
+                category: "food",
+                price: 99,
+            },
+            {
+                category: "junkies",
+                price: 30,
+            },
+            {
+                category: "snacks",
+                price: 87.92,
+            },
+            {
+                category: "food",
+                price: 33.45,
+            },
+        ]
+    
+
+        const searchInput = document.querySelector(".text")
+
+        document.addEventListener("DOMContentLoaded", displayList(list))
+
+        searchInput.addEventListener("keyup",()=>{
+         const searchVal = searchInput.value
+         const newList = list.filter((item)=>item.category.includes(searchVal))
+         const newTotalPrice = newList.reduce((total,price)=>{
+            total += price.price
+            return total
+         },0)
+         document.querySelector(".price").innerHTML = `<h2>Search Price: $${newTotalPrice} </h2>`
+         displayList(newList)
+
+         promises()
+    
+  
+        })
+
+        function displayList(array) {
+            let listItem = ""
+            for (const item of array) {
+                 listItem += `<div style="display:flex; align-items:center;">
+                        <h2>${item.category}</h2>
+                        <p style="margin-left:10px;">${item.price}</p>
+                        <button onclick="removeEl(${item.price})">Remove</button>
+                    </div>`
+            }
+            document.querySelector(".list").innerHTML  = listItem !== "" ? listItem : "No Result Found"
+        }
+
+
+        list.reduce((total,price)=>{
+             total += price.price
+             document.querySelector(".total").innerHTML = `<h1>Total Price: $${total}</h1>`
+            return total
+        },0)
+
+      console.log(["all",...new Set(list.map(item=>item.category))]);
+
+
+    
+    
+      document.querySelector(".form").addEventListener("submit",(e)=>{
+        e.preventDefault()
+       const data = new FormData(e.currentTarget)
+       const value = [...data.values()]
+       const  keys = [...data.keys()]
+       const  both = [...data.entries()]
+    //    const idk  = [...data.set("text",searchInput.value)]
+        const idk = data.set("text",searchInput.value)
+
+      
+      if (value.includes("")) {
+        console.log("Provide All Input")
+        return;
+      }
+      const values = Object.fromEntries(data)
+       console.log(values);
+
+      })
+
+    const food = ( list.find((item)=>item.category === "food"));
+    console.log(Array.from(food));
+
+
+
+    function getElement(selector,isMultiple) {
+       const el =  isMultiple ? document.querySelectorAll(selector):  document.querySelector(selector)
+        if ((isMultiple && el.length < 1) || (!isMultiple && el === null)) {
+            throw new Error(`Invalid Selector: ${selector}`)
+        }
+       return el
+    }
+
+    // console.log);
+    getElement(".class",true)
+
+
+    function removeEl(id) {
+        const newList = list.filter((item)=>item.price !== id)
+        displayList(newList)
+    }   
+
+
+    function promises() {
+        const promises = new Promise((resolve,reject)=>{
+        if (searchInput.value === "food") {
+            resolve("Here it is")
+            return;
+        }
+        reject("Nope")
+    }).then(res=>{
+        console.log(res);
+    })
+    .catch(err=>console.log(err))
+    }
+
+
+    </script>
+</body>
+</html>
