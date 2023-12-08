@@ -52,8 +52,8 @@ body{
   align-items: center;
   /* max-width: 50rem; */
   justify-content: space-between;
-  margin-inline-end: 60px;
-  margin-inline-start: 30px;
+  /* padding-left: 60px;
+  padding-right: 30px; */
 }
 
 .logo-container{
@@ -88,8 +88,9 @@ body{
 
 .hamburger-container{
   display: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
+
 .hamburger-container div{
   width: 25px;
   height: 3px;

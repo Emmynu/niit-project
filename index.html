@@ -3,194 +3,380 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Website</title>
-  <link rel="stylesheet" href="./styles/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+  <title>Bluegate Schools</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
 <body>
-  <!-- School Info -->
-  <header class="school-info-container">
-    <!-- Number && email section -->
-      <section class="info-container">
-          <h2 class="school-info"> <img src="./images/phne.png" alt="">+23481526619</h2>
-          <h2 class="school-info"><img src="./images/email.png" alt=""> support@example.com</h2>
+    <!-- School Info -->
+    <header class="school-info-container">
+      <!-- Number && email section -->
+        <section class="info-container">
+            <h2 class="school-info"> <img src="./images/phne.png" alt=""><span>+23481526619</span></h2>
+            <h2 class="school-info"><img src="./images/email.png" alt=""> <span>support@example.com</span></h2>
+        </section>
+        <section class="info-section-2">
+          <input type="text" class="text" placeholder="Search"/>
+          <img src="/images/search.png" alt=""  class="search">
+        </section>
+    </header>
+
+    <!-- nav section -->
+    <nav class="nav-section">
+      <!-- Logo container -->
+      <section class="logo-container">
+        <h2 class="logo">LOGO</h2>
       </section>
-  </header>
-
-  <nav class="nav-container">
-    <!-- Logo container -->
-    <section class="logo-container">
-      <h2 class="logo">LOGO</h2>
-    </section>
-    <!-- Pages container -->
-    <section>
-      <ul class="pages-container">
-       <li><a href="#!" class="page">Home</a></li>
-       <li><a href="#!" class="page">About</a></li>
-       <li><a href="#!" class="page">Blog</a></li>
-       <li><a href="#!" class="page">Admission</a></li>
-       <li><a href="#!" class="page">Contact</a></li>
-      </ul>
-    </section>
-    <!-- Hamburger icon -->
-    <section class="hamburger-container">
-      <div></div>
-      <div></div>
-      <div></div>
-    </section>
-
-    <!-- Small Screen Pages -->
-    <aside class="small-screen-pages-container">
-      <header class="logo-container">
-        <h2 class="logo" style="font-size: 24px;">LOGO</h2>
-        <button class="hamburger-container close-nav ">&#10006;</button>
-      </header>
-      <ul class="sm-pages-container">
+      <!-- Pages container -->
+      <section>
+        <ul class="pages-container">
         <li><a href="#!" class="page">Home</a></li>
         <li><a href="#!" class="page">About</a></li>
         <li><a href="#!" class="page">Blog</a></li>
-        <li><a href="#!" class="page">Contact</a></li>
         <li><a href="#!" class="page">Admission</a></li>
-       </ul>
-    </aside>
-  </nav>
+        <li><a href="#!" class="page">Contact</a></li>
+        </ul>
+      </section>
+      <!-- Hamburger icon -->
+      <section class="hamburger-container">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </nav>
+     <!-- Small Screen Pages -->
+      <section class="small-screen-pages-container">
+        <ul class="sm-pages-container">
+          <li><a href="#!" class="page">Home</a></li>
+          <li><a href="#!" class="page">About</a></li>
+          <li><a href="#!" class="page">Blog</a></li>
+          <li><a href="#!" class="page">Contact</a></li>
+          <li><a href="#!" class="page">Admission</a></li>
+        </ul>
+      </section>
 
-  <main>
-    <!-- intro-section -->
-    <section class="intro-section-container">
-      <!-- <img src="" alt=""> -->
-      <article class="intro-article">
-        <h2>World’s Leading University For The Best Career</h2>
-        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio temporibus tempora quo repellat nulla. Ipsum magnam atque totam distinctio commodi quisquam ipsa iure corporis voluptate voluptas eos, dolorem quod omnis. </h6>
-        <button><a href="#!">Admit Now</a></button>
-      </article>
-    </section>
-
-    <!-- section-2 -->
-    <section class="section-2-container">
-      <!-- section1 -->
-      <article class="section-2-article">
-        <div>
-          <h2>Full Free Scholarship Available For a Whole Session</h2>
-          <div class="underline"></div>
-        </div>
-        <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ullamco</p>
-
-        <section>
-          <div style="display: flex; align-items: center;" data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine">
-             <img style="width: 18px; margin-right: 5px;" src="https://kidbawp.codebasket.xyz/wp-content/uploads/2023/04/bulb-2-2.png" alt="">
-             <h4>Creative Study Pattern
-            </h4>
+      <main>
+        <div class="home">
+          <img src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="550" style="object-fit: cover;" alt="">
+          <div class="bg-opac">
           </div>
-          <div style="display: flex; align-items: center;"  data-aos="fade-right"
-            data-aos-offset="400"
-            data-aos-easing="ease-in-sine">
-            <img style="width: 18px; margin-right: 5px;" src="https://kidbawp.codebasket.xyz/wp-content/uploads/2023/04/plane-2-1.png" alt="">
-            <h4>Quick Crash Courses
-           </h4>
-         </div>
-
-         <div style="display: flex; align-items: center;"  data-aos="fade-right"
-          data-aos-offset="403"
-          data-aos-easing="ease-in-sine">
-          <img style="width: 18px; margin-right: 5px;" src="https://kidbawp.codebasket.xyz/wp-content/uploads/2023/04/protractor-2-1.png" alt="">
-          <h4>Provided with Experimental Examples
-
-         </h4>
-       </div>
-
-       <div style="display: flex; align-items: center;"  data-aos="fade-right"
-       data-aos-offset="405"
-       data-aos-easing="ease-in-sine">
-        <img style="width: 18px; margin-right: 5px;" src="https://kidbawp.codebasket.xyz/wp-content/uploads/2023/04/certificate-2-1.png" alt="">
-        <h4>
-          Certification Awarded
-       </h4>
-     </div>
+        </div>
+        <section class="admission-container">
+          <div><img src="https://www.greenspringsschool.com/wp-content/uploads/2015/11/admission_apply.jpg" alt=""></div>
+          <article>
+            <h2>Apply for Admission</h2>
+            <h6>We are one of the foremost British international schools in Lagos and Nigeria; we provide a well-rounded education that enables our students to develop vital life skills and excel academically. Here is a summary of our admission procedure.</h6>
+            <button>Apply Now</button>
+          </article>
         </section>
-      </article>
-      <!-- section2 -->
-      <div>
-        <div class="section-2-image-container">
-          <img src="https://images.pexels.com/photos/5212667/pexels-photo-5212667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="section-2-img">
+        <!-- featured-news-container -->
+        <section class="featured-news-container">
+          <header >
+            <h2>Featured News</h2>
+            <div class="featured-news-underline"></div>
+          </header>
+          <div class="history-card-container">
+            <div class="history-card">
+              <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-27-at-1.58.41-PM-768x506.jpeg" alt="">
+              <article>
+               <h2>Greensprings Dominates Brooke House College Football Academy Tournament</h2>
+              <p>
+                In a thrilling showcase of talent and sportsmanship, the male and female football teams of our Lekki campus took the field by storm at the 2023 edition of the Brooke House College Football Academy Tournament. In the girls’ category, where six schools vied for supremacy, Greensprings emerged victorious, clinching...
+          
+              </p>
+              <button>Read More</button>
+              </article>
+            </div>
+            <div class="history-card">
+              <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2023/10/IMG_0028-768x506.jpg" alt="">
+              <article>
+               <h2>Year 11 Students Initiate Tournament to Empower Female Footballers</h2>
+              <p>
+                In an attempt to embrace female inclusivity in football, two of our female Year 11 students, Ifeoluwa Owoigbe and Munachi Emeghara pioneered a female football tournament which they tagged “Rising Female Footballers.” Their goal was to empower female football players and break gender biases in the sport.
+
+              </p>
+              <button>Read More</button>
+              </article>
+            </div>
+            <div class="history-card">
+              <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2023/10/Inioluwa.jpg" alt="">
+              <article>
+               <h2>National Youth Games 2023: Our Student Made Lagos State Proud</h2>
+              <p>
+						The National Youth Games 2023 recently took place in Asaba, Delta State, and our Anthony campus student Inioluwa Dayo-Dunmoye was one of the shining stars, helping Team Lagos emerge overall winner. The thrilling event witnessed extraordinary performances by young athletes representing their states with passion and dedication. 
+					
+              </p>
+              <button>Read More</button>
+              </article>
+            </div>
+            <div class="history-card">
+              <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2023/09/Lagos-Country-Club-Youth-Tennis-Tournament-765x506.jpeg" alt="">
+              <article>
+               <h2>Our Student Shines at the Annual Lagos Tennis Tournament</h2>
+              <p>
+                Ahenjir Tesese, a female elementary student at our Lekki campus, has emerged top in the 18th Annual Lagos Country Club Youth Tennis Tournament. The competition was organized by Dr. (Prince) Ademiluyi Tennis Foundation and sponsored by the Human Manager Group. It served as a means of nurturing young minds...
+                </p>
+              <button>Read More</button>
+              </article>
+            </div>
+
+            <!-- <ul class="slider">
+              <li>
+                <a href="#!">Students 1Embark on UK Expedition for Duke of Edinburgh Awards</a>
+                <span>August 28, 2023</span>
+                <div>
+                  <img src="https://www.Bluegateschool.com/wp-content/uploads/2023/08/IMG_20230727_160642_594-768x506.jpg" alt="">
+                  <h3>						Over 30 students embarked on a trip to Leeds, United Kingdom from Saturday 22nd July to Monday 31st July in partial fulfilment of the requirement for obtaining their Duke of Edinburgh Bronze/Silver Award. The expedition was designed to challenge participants physically, mentally, and emotionally and our students were segmented...
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <a href="#!">Students 2 Embark on UK Expedition for Duke of Edinburgh Awards</a>
+                <span>August 28, 2023</span>
+                <div>
+                  <img src="https://www.Bluegateschool.com/wp-content/uploads/2023/08/IMG_20230727_160642_594-768x506.jpg" alt="">
+                  <h3>						Over 30 students embarked on a trip to Leeds, United Kingdom from Saturday 22nd July to Monday 31st July in partial fulfilment of the requirement for obtaining their Duke of Edinburgh Bronze/Silver Award. The expedition was designed to challenge participants physically, mentally, and emotionally and our students were segmented...
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <a href="#!">Students3 Embark on UK Expedition for Duke of Edinburgh Awards</a>
+                <span>August 28, 2023</span>
+                <div>
+                  <img src="https://www.greenspringsschool.com/wp-content/uploads/2023/08/IMG_20230727_160642_594-768x506.jpg" alt="">
+                  <h3>						Over 30 students embarked on a trip to Leeds, United Kingdom from Saturday 22nd July to Monday 31st July in partial fulfilment of the requirement for obtaining their Duke of Edinburgh Bronze/Silver Award. The expedition was designed to challenge participants physically, mentally, and emotionally and our students were segmented...
+                  </h3>
+                </div>
+              </li>
+              <li>
+                <a href="#!">Students3 Embark on UK Expedition for Duke of Edinburgh Awards</a>
+                <span>August 28, 2023</span>
+                <div>
+                  <img src="https://www.greenspringsschool.com/wp-content/uploads/2023/08/IMG_20230727_160642_594-768x506.jpg" alt="">
+                  <h3>						Over 30 students embarked on a trip to Leeds, United Kingdom from Saturday 22nd July to Monday 31st July in partial fulfilment of the requirement for obtaining their Duke of Edinburgh Bronze/Silver Award. The expedition was designed to challenge participants physically, mentally, and emotionally and our students were segmented...
+                  </h3>
+                </div>
+              </li>
+            </ul> -->
+          </div> 
+          <article class="news-letter-container">
+            <h3>Be the first to know</h3>
+            <p>Signup for the latest news from Bluegate School</p>
+            <div>
+              <input type="text" class="news-letter-input" placeholder="Name">
+              <input type="email" class="news-letter-input" placeholder="Email">
+              <button>Subscribe</button>
+            </div>
+          </article>
+        </section>
+
+        <!-- history-container -->
+        <section>
+          <div  class="history-container">
+            <h2>Leading British International School in Lagos & Nigeria</h2>
+            <div class="featured-news-underline"></div>
+            <p>Bluegate School was established in January 1985. As a result of our rich curriculum and the excellent academic performance of our students over the years, our school has become one of the most sought-after international schools in Lagos and all over Nigeria.</p>
+  
+            <p>  At Bluegate, we understand how boys and girls grow and learn. Therefore, we use a modern curriculum that makes learning easy for our students. Furthermore, all our teachers are certified, and our classes are equipped with state-of-art learning facilities.</p>
+            
+            <p>Although we are one of the few British international schools in Nigeria that strictly run a British curriculum, we are proudly Nigerians. While we train our students to become global citizens, we celebrate the values and heritage of Nigeria.
+            </p>
+              <p>We adopt the Montessori Method in our Preschool; the International Primary Curriculum (IPC) in our Elementary School; the National British Curriculum, which is designed to effectively prepare our students for the International General Certificate of Secondary Education (IGCSE)examination, in our Secondary School; and the International Baccalaureate Diploma Programme in our Sixth Form.</p>
+          </div>
+
+            <div class="history-card-container">
+              <div class="history-card">
+                <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2018/02/IB-Diploma-10.jpg" alt="">
+                <article>
+                 <h2>IB Diploma Programme</h2>
+                <p>
+                  The Sixth Form at Bluegate's School admits motivated and committed students with minimum of 5 credits in their O’ Levels (GCSEs, IGCSEs or WASSCE). Candidates will not normally           
+                </p>
+                <button>Read More</button>
+                </article>
+              </div>
+
+              <div class="history-card">
+                <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2018/02/Anthony-Preschool-8.jpg" alt="">
+                <article>
+                  <h2>Preschool</h2>
+                  <p>The Pre-school section of Bluegate's School is a specially-prepared Montessori environment, laying a solid foundation for children aged 18 months to 5+. 
+                  </p>
+                  <button>Read More</button>
+                  </article>
+              </div>
+
+              <div class="history-card">
+                <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2018/02/Lekki-Elementary-7.jpg" alt="">
+                <article>
+                  <h2>Elementary</h2>
+                  <p>The primary formative years are set to achieve a secure level of functionality and effectiveness in the core skills which includes: reading, oral and written communication, 
+                  </p>
+                  <button>Read More</button>
+                </article>
+              </div>
+
+              <div class="history-card">
+                <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2018/02/Anthony-Secondary-1.jpg" alt="">
+                <article>
+                  <h2>Secondary</h2>
+                  <p>						In the first year of the secondary school (our Y7) the scope of the curriculum widens to include a broader subject base.
+
+                  </p>
+                  <button>Read More</button>
+                </article>
+              </div>
+            </div>
+
+            <div class="brochure-container">
+              <button>Download E-Brochure</button>
+            </div>
+        </section>
+
+        <!-- mission -->
+        <section>
+            <div class="history-container">
+              <h2>Redefining Education in Africa</h2>
+             <div class="featured-news-underline"></div>
+              <p>Our mission is to lead holistic, inclusive, innovative world-class education in Africa. For this reason, we have adopted different approaches and tools that make learning enjoyable for our students. These approaches and tools include the use of activity-based learning, virtual learning environment, among others. In addition to that, we are the first Thinking School in Nigeria, and we encourage our students to be critical thinkers.</p>
+              <p>Our twenty-first-century learning environment and unique teaching approach make us one of the tested-and-trusted British international schools in Lagos and Nigeria.</p>
+            </div>
+            <div class="history-card-container">
+              <div class="history-card">
+                <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2017/11/Anthony-Secondary-4.jpg" alt="">
+                <article>
+                 <h2>Well Rounded Education</h2>
+                <p>
+                  Here is the verdict! Your child needs a WELL-ROUNDED EDUCATION.
+                  A child that has a well-rounded education is equipped with relevant skills to be able to manage complex situations.            
+                </p>
+                <button>Read More</button>
+                </article>
+              </div>
+
+              <div class="history-card">
+                <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2017/11/Lekki-Elementary-4.jpg" alt="">
+                <article>
+                 <h2>Activity Based Learning</h2>
+                <p>
+                  Educational research into brain development and learning has made us understand that the more senses of the child involved in the learning process, the deeper the understanding of what is taught.  
+                </p>
+                <button>Read More</button>
+                </article>
+              </div>
+
+              <div class="history-card">
+                <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2017/11/Lekki-Elementary-11-1.jpg" alt="">
+                <article>
+                 <h2>Virtual Learning Environment</h2>
+                <p>
+						      VLE is a great tool which will change and enhance the delivery and assessment of education forever. What we are seeing now is only scratching the surface.
+                </p>
+                <button>Read More</button>
+                </article>
+              </div>
+
+              <div class="history-card">
+                <img class="h-img" src="https://www.greenspringsschool.com/wp-content/uploads/2015/11/Activity-based-learning.jpg" alt="">
+                <article>
+                 <h2>Thinking School</h2>
+                <p>
+						      Here at Greensprings School, students are encouraged to think ‘outside the box.' This will enable them to deconstruct their own learning process and find out what works best for them.
+                </p>
+                <button>Read More</button>
+                </article>
+              </div>
+            </div>
+        </section>
+
+        <!-- tour -->
+        <section>
+          
+        </section>
+
+        <!-- reviews -->
+        <section class="reviews-container">
+          <h2>What our parents say </h2>
+          <div class="featured-news-underline"></div>
+
+          <div class="reviews">
+          </div>
+          <!-- <button onclick="nextReview()">next</button> -->
+
+        </section>
+
+        <!-- follow-page -->
+        <section class="follow-page">
+          <h2>Follow us on Facebook</h2>
+          <div class="featured-news-underline"></div>
+
+         <p> <a href="#!">Visit Page</a></p>
+        </section>
+
+
+        <!-- media-container -->
+        <section class=" media-container">
+          <h2>Media</h2>
+          <div class="featured-news-underline"></div>
+
+          <article class="filter-buttons">
+            <button class="filter-btn">All</button>
+            <button class="filter-btn" data-type="image">Image</button>
+            <button class="filter-btn" data-type="audio">Audio</button>
+            <button class="filter-btn" data-type="video">Video</button>
+          </article>
+
+          <section class="media"></section>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-content-container">
+          <div>
+            <h4>Anthony Campus</h4>
+            <div>
+              <p>32, Olatunde Ayoola Avenue,Anthony,Lagos, Nigeria.</p>
+              <p>+234 908 717 1700</p>
+              <p>P O Box 4801K Ikeja Headquarters, Ikeja, Lagos.</p>
+              <p>info.anthony@greenspringsschool.com</p>
+              <p>Admission 
+                Tel: +234 704 550 2424
+                Email:admission.anthony@greenspringsschool.com info@greenspringsschool.com</p>
+            </div>
+          </div>
+          <div>
+            <h4>Lekki Campus</h4>
+            <div>
+              <p>Ibeju-Lekki (After Crown Estate),
+                Awoyaya,
+                Lagos, Nigeria.</p>
+                <p>+234 701 671 8865, +234 806 407 4503</p>
+                <p>P O Box 4801K Ikeja Headquarters, Ikeja, Lagos.</p>
+                <p>info.lekki@greenspringsschool.com</p>
+                <p>Admission Tel: +234 704 550 2444
+                  Email: admission.lekki@greenspringsschool.com
+                </p>
+            </div>
+          </div>
+          <div>
+            <h4>Ikoyi Campus</h4>
+            <div>
+              <p>12a, Reeve road, off Glover road, 
+                Ikoyi, 
+                Lagos, Nigeria.</p>
+              <p>+2347045504806  +2348170274881</p>
+              <p>P O Box 4801K Ikeja Headquarters, Ikeja, Lagos.</p>
+              <p>info.ikoyi@greenspringsschool.com</p>
+              <p>Admission Tel: +2347045504806</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+        <hr>
+        <h3>Copyright © 2023 All Rights Reserved. Greensprings Educational Services Limited </h3>
+      </footer>
 
-    <!-- third section -->
-    <section class="third-section-container">
-      <div>
-        <img src="https://kidbawp.codebasket.xyz/wp-content/uploads/2023/05/support-icon-3.png" alt="">
-        <h2>200</h2>
-        <h3>Certified Teachers</h3>
-      </div>
-
-      <div>
-        <img src="./images/school.png" alt="">
-        <h2>2</h2>
-        <h3>Campuses</h3>
-      </div>
-
-      <div>
-        <img src="https://kidbawp.codebasket.xyz/wp-content/uploads/2023/05/trophy-icon-3.png" alt="">
-        <h2>24,600</h2>
-        <h3>Sucessful Students</h3>
-      </div>
-
-      <div>
-        <img src="/images/age.png" alt="">
-        <h2>10</h2>
-        <h3> Years Old</h3>
-      </div>
-    </section>
-
-    <!-- fourth-section -->
-    <section class="fourth-section-container">
-      <h2 >Meet Our Experts</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, excepturi!</p>
-      <div class="card-container">
-        <div class="card" data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
-          <img src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-          <h4>Similoluwa John</h4>
-          <h6>Principal</h6>
-        </div>
-
-        <div class="card" data-aos="fade-right"
-        data-aos-offset="350"
-        data-aos-easing="ease-in-sine">
-          <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-          <h4>Jackson Sarah</h4>
-          <h6>Vice Principal</h6>
-        </div>
-
-        <div class="card" data-aos="fade-right"
-        data-aos-offset="400"
-        data-aos-easing="ease-in-sine">
-          <img src="https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-          <h4>Woodsgate Rachael</h4>
-          <h6>Bursar</h6>
-        </div>
-
-        <div class="card" data-aos="fade-right"
-        data-aos-offset="405"
-        data-aos-easing="ease-in-sine">
-          <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-          <h4>Liliana Bieber</h4>
-          <h6>Head Teacher</h6>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>Bluegate Schools &copy; All Reserved Rights <span class="date"></span></footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="/scripts/index.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
