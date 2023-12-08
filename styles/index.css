@@ -337,6 +337,7 @@ body{
 .reviews-container {
   text-align: center;
   position: relative;
+  overflow:hidden;
 }
 .reviews-container h2, .follow-page h2{
   font-size: 45px;
@@ -506,12 +507,13 @@ hr{
   .history-container p {
     font-size: 13px;
   }
-  .history-card-container{
+  .history-card-container,.media{
   grid-template-columns: repeat(1, minmax(0 ,1fr));
 
   }
   .media{
-    margin: 2rem;
+    margin:1rem;
+    
   }
   .footer-content-container {
     display: block;
